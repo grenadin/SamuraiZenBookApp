@@ -9,15 +9,15 @@ using SamuraiApp.Data;
 
 namespace SamuraiApp.Data.Migrations
 {
-    [DbContext(typeof(SamuraiContext))]
-    [Migration("20200727172224_Init")]
+    [DbContext(typeof(SamuraiContextNoTracking))]
+    [Migration("20200730090456_Init")]
     partial class Init
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
-                .HasAnnotation("ProductVersion", "3.1.0")
+                .HasAnnotation("ProductVersion", "3.1.6")
                 .HasAnnotation("Relational:MaxIdentifierLength", 128)
                 .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
 
